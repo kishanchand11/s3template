@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::you_aws_acc_id:user/youriamuserhere"   #iam arn
+            },
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:us-west-1:xxxxxxxxxx:accesspoint/s3iam/object/test/*"   #accesspoint_of_s3_bucket plus need to add folder name "object/foldername" with "/*"
+        }
+    ]
+}
