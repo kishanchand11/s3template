@@ -23,3 +23,5 @@
 
 # aws s3 cp s3://devs3bucket454/test/File-no-2023 /home/cloudshell-user
 # “aws s3 cp s3://arn-of-the-access-point/File-Name local-file-name”
+
+# aws s3 cp File-no-2023 s3://arn:aws:s3:us-east-1:905418026911:accesspoint/acc/pen/File-no-2023
